@@ -9,7 +9,7 @@
         <!--Code View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="CodeViewController" customModule="_832" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="CodeViewController" customModule="_832_SafePad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -132,7 +132,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kji-pR-0vB" userLabel="display">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="4RW-yO-ftD"/>
+                                    <constraint firstAttribute="width" constant="80" id="4RW-yO-ftD"/>
                                     <constraint firstAttribute="height" constant="30" id="SLr-pg-Vfp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -151,45 +151,30 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-1S-DzB">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hU4-Qp-det"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1qx-0m-VTs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="0k5-fJ-ZYj"/>
-                            <constraint firstItem="1KT-0E-2fd" firstAttribute="top" secondItem="RF6-1S-DzB" secondAttribute="bottom" constant="30" id="1YC-dn-49q"/>
                             <constraint firstAttribute="centerY" secondItem="DLn-69-ZUH" secondAttribute="centerY" id="2QT-0n-mze"/>
                             <constraint firstAttribute="centerX" secondItem="EoY-CK-JKt" secondAttribute="centerX" id="5dj-hq-Wqe"/>
                             <constraint firstAttribute="centerX" secondItem="1KT-0E-2fd" secondAttribute="centerX" id="6z8-Ua-eGO"/>
-                            <constraint firstAttribute="centerX" secondItem="RF6-1S-DzB" secondAttribute="centerX" id="8Mg-sF-I4d"/>
                             <constraint firstAttribute="centerY" secondItem="EoY-CK-JKt" secondAttribute="centerY" id="Dsn-X7-IGF"/>
                             <constraint firstAttribute="centerX" secondItem="Acw-hz-7WL" secondAttribute="centerX" id="FDA-Dz-AP9"/>
-                            <constraint firstItem="lhl-97-WLK" firstAttribute="top" secondItem="kji-pR-0vB" secondAttribute="bottom" constant="30" id="IwK-Rh-hpM"/>
+                            <constraint firstItem="lhl-97-WLK" firstAttribute="top" secondItem="kji-pR-0vB" secondAttribute="bottom" constant="50" id="IwK-Rh-hpM"/>
                             <constraint firstAttribute="centerY" secondItem="1qx-0m-VTs" secondAttribute="centerY" id="Juu-Ub-gO9"/>
                             <constraint firstItem="1qx-0m-VTs" firstAttribute="top" secondItem="fPe-tT-zuf" secondAttribute="bottom" constant="80" id="K6y-EP-Bcp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1KT-0E-2fd" secondAttribute="trailing" constant="80" id="QRk-D9-HkZ">
-                                <variation key="widthClass=compact" constant="40"/>
-                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="1KT-0E-2fd" secondAttribute="trailing" constant="80" id="QRk-D9-HkZ"/>
                             <constraint firstItem="fPe-tT-zuf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="R3d-wj-lb2"/>
                             <constraint firstItem="NOu-zp-98N" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="RCT-YQ-V8N"/>
                             <constraint firstItem="NOu-zp-98N" firstAttribute="top" secondItem="1qx-0m-VTs" secondAttribute="bottom" constant="80" id="RCb-rR-aSo"/>
                             <constraint firstAttribute="centerX" secondItem="3pE-KU-j0l" secondAttribute="centerX" id="UzP-nh-d59"/>
-                            <constraint firstItem="1KT-0E-2fd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="X1b-DZ-dpf">
-                                <variation key="widthClass=compact" constant="40"/>
-                            </constraint>
+                            <constraint firstItem="1KT-0E-2fd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="X1b-DZ-dpf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DLn-69-ZUH" secondAttribute="trailing" constant="40" id="XYZ-81-7uI"/>
                             <constraint firstItem="EoY-CK-JKt" firstAttribute="top" secondItem="Acw-hz-7WL" secondAttribute="bottom" constant="80" id="ciC-fI-keu"/>
                             <constraint firstItem="DLn-69-ZUH" firstAttribute="top" secondItem="lhl-97-WLK" secondAttribute="bottom" constant="80" id="dXe-Tj-P6I"/>
                             <constraint firstAttribute="centerX" secondItem="kji-pR-0vB" secondAttribute="centerX" id="hZT-Au-yej"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lhl-97-WLK" secondAttribute="trailing" constant="40" id="kga-j7-Bfy"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1KT-0E-2fd" secondAttribute="bottom" constant="30" id="mCI-TH-QtC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1KT-0E-2fd" secondAttribute="bottom" constant="50" id="mCI-TH-QtC"/>
                             <constraint firstItem="5sx-ix-QqQ" firstAttribute="top" secondItem="DLn-69-ZUH" secondAttribute="bottom" constant="80" id="msI-EQ-LyN"/>
                             <constraint firstItem="3pE-KU-j0l" firstAttribute="top" secondItem="EoY-CK-JKt" secondAttribute="bottom" constant="80" id="nZO-XH-mgL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5sx-ix-QqQ" secondAttribute="trailing" constant="40" id="yYP-dB-69Y"/>
@@ -207,10 +192,8 @@
                                 <exclude reference="5sx-ix-QqQ"/>
                                 <exclude reference="1KT-0E-2fd"/>
                                 <exclude reference="kji-pR-0vB"/>
-                                <exclude reference="RF6-1S-DzB"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1YC-dn-49q"/>
                                 <exclude reference="6z8-Ua-eGO"/>
                                 <exclude reference="QRk-D9-HkZ"/>
                                 <exclude reference="X1b-DZ-dpf"/>
@@ -232,7 +215,6 @@
                                 <exclude reference="ciC-fI-keu"/>
                                 <exclude reference="RCT-YQ-V8N"/>
                                 <exclude reference="RCb-rR-aSo"/>
-                                <exclude reference="8Mg-sF-I4d"/>
                                 <exclude reference="R3d-wj-lb2"/>
                                 <exclude reference="IwK-Rh-hpM"/>
                                 <exclude reference="kga-j7-Bfy"/>
@@ -251,10 +233,8 @@
                                 <include reference="5sx-ix-QqQ"/>
                                 <include reference="1KT-0E-2fd"/>
                                 <include reference="kji-pR-0vB"/>
-                                <include reference="RF6-1S-DzB"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1YC-dn-49q"/>
                                 <include reference="6z8-Ua-eGO"/>
                                 <include reference="QRk-D9-HkZ"/>
                                 <include reference="X1b-DZ-dpf"/>
@@ -276,7 +256,6 @@
                                 <include reference="ciC-fI-keu"/>
                                 <include reference="RCT-YQ-V8N"/>
                                 <include reference="RCb-rR-aSo"/>
-                                <include reference="8Mg-sF-I4d"/>
                                 <include reference="R3d-wj-lb2"/>
                                 <include reference="IwK-Rh-hpM"/>
                                 <include reference="kga-j7-Bfy"/>
@@ -284,8 +263,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="calculatorDisplay" destination="kji-pR-0vB" id="lln-2m-FqZ"/>
-                        <outlet property="progressView" destination="1KT-0E-2fd" id="xnf-xh-WqK"/>
+                        <outlet property="calculatorDisplay" destination="kji-pR-0vB" id="Ci5-aG-JD9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
